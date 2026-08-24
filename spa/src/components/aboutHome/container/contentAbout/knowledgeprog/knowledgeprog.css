@@ -1,0 +1,21 @@
+.bodyProgressBar{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    justify-content:space-between;
+}
+.knowName{
+    box-sizing:border-box;
+    height:min-content;
+}
+.knowName > p {
+    margin:0;
+    padding:0;
+    font-style:italic;
+}
+.knowQuantity{
+    width:60%;
+}
+.progress-bar{
+    color:rgb(255, 255, 255);
+}

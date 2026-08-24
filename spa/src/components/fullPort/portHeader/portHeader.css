@@ -1,0 +1,39 @@
+.portHeader-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.portTitle{
+    color:#c8ff00;
+}
+.portText{
+    background-color:#c8ff00;
+    padding:20px;
+}
+
+.portHeader-list-itemBox {
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink:0;
+    color:#050505;
+}
+
+.portHeader-list-itemBox figure {
+    background-color:#fa023c;
+    border-radius:50%;
+    box-shadow: 4px 4px 10px #212121;
+}
+.portHeader-list-itemBox p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
+

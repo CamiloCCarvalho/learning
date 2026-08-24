@@ -1,0 +1,24 @@
+#carouselBox {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items:center;
+    color:#fa023c;
+}
+
+.w-100 { /*Images Carousel*/
+    width: 80%;
+    border-radius:10px;
+    filter:brightness(80%);
+    border: 2px solid #c8ff00;
+}
+
+ul, li, a {
+    text-decoration:none;
+    list-style-type:none;
+    color: #fa023c;
+}
+.linkTo:hover{
+    color:#c8ff00;
+    transition: 0.5s;
+}

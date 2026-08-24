@@ -1,0 +1,8 @@
+{
+    "compileOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "outFile": "index.js",
+        "lib": ["ES2015", "es2015.core"]
+    }
+}

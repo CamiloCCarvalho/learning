@@ -1,0 +1,16 @@
+.stacks {
+    background-color: #c8ff00;
+    color: rgb(24, 24, 24);
+}
+.row {
+    justify-content: space-around;
+    align-items: center;
+}
+.coll {
+    width:fit-content;
+    text-align: center;
+}
+.logo {
+    filter:drop-shadow(0 16px 10px rgba(41, 41, 41, 0.381));
+    padding:10px;
+}

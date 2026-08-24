@@ -1,0 +1,7 @@
+.calculatorBox{
+    width:100%;
+    height:80vh;
+    border: 2px solid silver;
+    padding:20px;
+    color:white;
+}

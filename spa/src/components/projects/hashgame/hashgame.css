@@ -1,0 +1,134 @@
+/* Page */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/* Box Game */
+.hashGameBox{
+    height:600px;
+    background:linear-gradient(90deg, rgb(122, 241, 4), #c5fb01);
+}
+.board{
+    display:grid;
+    width: 100%;
+    height:100%;
+    justify-content:center;
+    align-content:center;
+    justify-items:center;
+    align-items:center;
+    grid-template-columns: repeat(3, auto);
+}
+
+/* Board with HOVER on void cells */
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before{
+    background: rgba(255,255,255, 0.3) !important;
+}
+
+/* Cells */
+.cell{
+    width:100px;
+    height:100px;
+    border: 2px solid antiquewhite;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+}
+.cell:nth-child(-n+3){
+    border-top:none;
+}
+.cell:nth-child(n+7){
+    border-bottom:none;
+}
+.cell:nth-child(3n+1){
+    border-left:none;
+}
+.cell:nth-child(3n+3){
+    border-right:none;
+}
+.cell.x, .cell.circle{
+    cursor:not-allowed;
+}
+
+/* X */
+.cell.x:before,
+.cell.x:after,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before{
+    content:'';
+    height: calc(100px *0.15);
+    width: calc(100px *0.9);
+    background:white;
+    position:absolute;
+    border-radius:20px;
+    box-shadow:0px 0px 5px rgba(40, 39, 39, 0.349);
+}
+.cell.x:before,
+.board.x .cell:not(.x):not(.circle):hover::before{
+    transform:rotate(45deg);
+}
+.cell.x:after,
+.board.x .cell:not(.x):not(.circle):hover::after{
+    transform:rotate(-45deg);
+}
+
+/* Circle */
+.cell.circle:before,
+.cell.circle:after,
+.board.circle .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before{
+    content:'';
+    height: calc(100px *0.8);
+    width: calc(100px *0.8);
+    background:white;
+    position:absolute;
+    border-radius:50%;
+    box-shadow:0px 0px 4px rgba(40, 39, 39, 0.349);
+}
+
+/* Message Win */
+.winning-message{
+    display:none;
+    flex-flow: column wrap;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0,0,0,0.8);
+}
+
+.winning-message-btn{
+    font-size:2.0rem;
+    padding:0 12px;
+    border-radius: 3px;
+    color:white;
+    border:none;
+    background-image:linear-gradient(to bottom, rgba(111,214,8, 100%), rgb(146, 255, 3));
+    font-family:'Anton';
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.winning-message-btn:hover{
+    color:rgb(232, 226, 226);
+    background-image:linear-gradient(to top, rgba(111,214,8, 100%), rgb(146, 255, 3));
+
+}
+
+.winnig-message-text{
+    color:white;
+    font-size:2.5rem;
+    font-family:'Anton';
+}
+
+.show-message{
+    display:flex;
+}

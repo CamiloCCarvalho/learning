@@ -1,0 +1,256 @@
+/* 
+Document Index:
+    0. Layout for the page
+    
+Default All Devices: 
+    1. Content
+
+Specific:
+    2. Mobile/Small Devices
+    3. Desktop/large Devices 
+*/
+
+/* 0- Layout for the page */
+.screen-index{
+    margin:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow:column wrap;
+}
+.contact-content h2{
+    color:rgb(236, 236, 236);
+}
+
+/* 1- Content */
+.container{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    margin-top:24px;
+    padding:12px;
+}
+.image{
+    width:200px;
+    border-radius:4px;
+}
+.container:nth-child(4){
+    height:400px;
+}
+
+#about {
+    position:relative;
+    top:60px;
+    right:15vw;
+}
+.about-image {
+    border-radius:50%;
+}
+#welcome {
+    align-self:flex-end;
+    margin-right: 2vw;
+}
+.about-content{
+    margin-top:12px;
+    padding:12px;
+    width:87%;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+    background:linear-gradient(45deg, rgb(251, 251, 251), rgb(242, 242, 242));
+    border:2px solid rgb(168, 1, 245);
+}
+.stacks-content{
+    margin-top:12px;
+    padding:12px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    border:2px solid purple;
+    border-radius:12px;
+    box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+    background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
+}
+.stacks-content:nth-child(2){
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    margin-top:12px;
+    border:2px solid, silver;
+    border-radius:12px;
+    box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+    background:linear-gradient(45deg, rgb(251, 251, 251), rgb(242, 242, 242));
+}
+.stack{
+    margin:24px;
+    width:80px;
+    height:80px;
+    filter:drop-shadow(0 16px 10px rgba(41, 41, 41, 0.695));
+}
+section:nth-child(3){
+	background:rgba(0, 0, 0, .1);
+}
+.social-btns{
+    width:80%;
+    height:70%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-items:center;
+    border:2px stroke purple;
+    border-radius:12px;
+    box-shadow:0 0 100px rgba(83, 83, 83, 0.2);
+    background:linear-gradient(95deg, rgb(118, 1, 220), rgb(181, 0, 194));
+}
+.social-btns a{
+    width:124px;
+    height:124px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+button{
+    width:64px;
+    height:64px;
+    font-size:24pt;
+    position:relative;
+    border-radius:30%;
+    background:none;
+    border:none;
+    color:purple;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.bg{
+    width:64px;
+    height:64px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius:40%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(rgb(241, 241, 241), rgb(237, 206, 206));    
+    filter:drop-shadow(0 0 5px rgba(255, 0, 195, 0.664));
+}
+i{
+    transition:2s;
+}
+
+.contact-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/* 2- Mobile and small devices */
+@media(max-width:699px){
+    h1::first-letter{
+        font-size:17pt;
+    }
+    h1{
+        font-size:16pt;
+    }
+    p{
+        font-size:12pt;
+    }
+    .title{
+        margin-top:.8rem;
+    }
+    .text{
+        margin-top:1.2rem;
+    }
+    .stacks-content{
+        width:87%;
+        margin:20px 0;
+    }
+    .contact-content{
+        width:87%;
+        height:100%;
+    }
+    i{
+        font-size:2.0rem;
+    }
+    button{
+        width:100px;
+        height:100px;
+        margin:8px;
+    }
+    .bg{
+        width:70px;
+        height:70px;
+    }
+}
+@media(max-width:400px){
+    
+    .container .stacks{
+        justify-content: flex-start;
+        align-items: flex-start;
+        height:990px;
+        margin-bottom:40px;
+    }
+    .social-btns{
+        height:max-content;
+    }
+    .footer{
+        margin:200px 0 0 0;
+    }
+}
+
+/* 3- Desktop and Large Devices */
+@media (min-width:700px){
+    h2::first-letter{
+        font-size:19pt;
+    }
+    section:nth-child(3){
+        height:auto;
+        min-height:500px;
+        flex-flow:row wrap;
+        justify-content:space-around;
+        align-items:center
+    }
+    section:nth-child(3) .stacks-content:nth-child(2){
+        width:40%;
+        min-height:300px;
+    }
+    .text{
+        margin-top:1.2rem;
+    }
+    .stacks-content{
+        width:40%;
+    }
+    .contact-content{
+        width:60%;
+        height:90%;
+    }
+    i{
+        font-size:2.5rem;
+    }
+    button{
+        width:120px;
+        height:120px;
+        margin:10px; 
+    }
+    .bg{
+        width:80px;
+        height:80px;
+    }
+}
+@media(min-width:800px){
+        .contact-content{
+            width:450px;
+            height:90%;
+        }
+}
+@media(min-width:1000px){
+    .contact-content{
+        width:80%;
+        height:90%;
+    }
+}

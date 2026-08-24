@@ -1,0 +1,38 @@
+#aboutBox {
+    height:fit-content;
+    border: none;
+}
+.headerAbout {
+    background-color: #fa023c;
+}
+.aboutPage {
+    color:black;
+    border-radius: 8px 8px 0 0;
+}
+.card-body {
+    background-color: #252525;
+}
+.title-about {
+    color:#c8ff00;
+    text-decoration:underline;
+}
+.text-about {
+    text-align: justify;
+    color:antiquewhite;
+    font-size:110%;
+}
+p > i{
+    color:#ef083e;
+}
+p > a{
+    color:orange;
+    text-decoration:underline;
+}
+p > a:hover{
+    color:#c8ff00;
+    transition:0.8s;
+}
+#aboutNavItem-1 {
+    background-color:#252525;
+    border: none;
+}

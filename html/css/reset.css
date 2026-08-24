@@ -1,0 +1,14 @@
+/* Reset Global-Default */
+body{
+    margin:0;
+    padding:0;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image:linear-gradient(to right, rgb(50, 50, 50), rgb(25, 25, 25));
+}
+ul, li, a, h1, h2, h3, p, i, button, div, section .header, .footer {
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    list-style:none;
+}

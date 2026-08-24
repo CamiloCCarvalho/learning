@@ -1,0 +1,34 @@
+.navbar{
+    box-shadow: 0 -20px 50px #fa023c;
+}
+.nav-link {
+    color: antiquewhite;
+}
+.nav-link.active{
+    color:#fa023c !important;
+}
+.nav-link:hover, .fa-github-alt:hover {
+    color:#c8ff00 ;
+    transition: 0.8s;
+}
+.dropdown-item {
+    color: antiquewhite;
+}
+.dropdown-item:hover {
+    background-image: linear-gradient(to right, #fa023c, #c7002e);
+    color:#050505;
+    transition: 0.2s;
+}
+span.navbar-toggler-icon{
+    background-color: #c8ff00;
+    border-radius:4px;
+    
+}
+
+/*
+vermelho quase rosa - #fa023c
+quase preto - #040004
+cinza - #413d3d
+amarelo - #c8ff00
+vinho - #4b000f
+*/
