@@ -1,0 +1,12 @@
+@use 'variables';
+
+body{
+    background: variables.$bg-primary-color;
+    color: antiquewhite;
+    
+    h2{
+        color: variables.$text-decoration-color;
+    }
+}
+
+    

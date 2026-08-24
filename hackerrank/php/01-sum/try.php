@@ -1,0 +1,17 @@
+<?php
+
+function solveMeFirst($a,$b){
+
+    // Write your code here
+    // Hint: type return $a + $b
+    
+}
+// ____Ignore the code below, it is necessary to run in site hackerRank____
+
+$handle = fopen ("php://stdin","r");
+$_a = fgets($handle);
+$_b = fgets($handle);
+$sum = solveMeFirst((int)$_a,(int)$_b);
+print ($sum);
+fclose($handle);
+?>
